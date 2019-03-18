@@ -1,6 +1,6 @@
 {
-  "name": "@siesam/ajax",
-  "version": "0.1.0",
+  "name": "@dpp/ajax",
+  "version": "1.0.0",
   "description": "wapper for axio and mock",
   "main": "index.js",
   "typings": "types/index.d.ts",
