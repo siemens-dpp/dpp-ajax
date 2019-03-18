@@ -1,5 +1,5 @@
 {
-  "name": "@dpp/ajax",
+  "name": "@ofm/ajax",
   "version": "1.0.0",
   "description": "wapper for axio and mock",
   "main": "index.js",
