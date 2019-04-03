@@ -10,3 +10,7 @@ yarn-error.log
 
 index.js
 mock.js
+
+
+!src/index.js
+!src/mock.js
