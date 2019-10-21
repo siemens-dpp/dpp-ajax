@@ -34,7 +34,7 @@ declare module "@ofm/ajax" {
         attachmentMap: any;
     }
 
-    export interface AjaxResponse<T = any> extends Promise<AjaxResponse<T>> {}
+    export interface AjaxPromise<T = any> extends Promise<AjaxResponse<T>> {}
 
     export interface AjaxInstance {
         defaults: AxiosRequestConfig;
@@ -42,25 +42,25 @@ declare module "@ofm/ajax" {
             request: AxiosInterceptorManager<AxiosRequestConfig>;
             response: AxiosInterceptorManager<AxiosResponse>;
         };
-        request<T = any>(config: AxiosRequestConfig): AjaxResponse<T>;
-        get<T = any>(url: string, config?: AxiosRequestConfig): AjaxResponse<T>;
-        delete(url: string, config?: AxiosRequestConfig): AjaxResponse;
-        head(url: string, config?: AxiosRequestConfig): AjaxResponse;
+        request<T = any>(config: AxiosRequestConfig): AjaxPromise<T>;
+        get<T = any>(url: string, config?: AxiosRequestConfig): AjaxPromise<T>;
+        delete(url: string, config?: AxiosRequestConfig): AjaxPromise;
+        head(url: string, config?: AxiosRequestConfig): AjaxPromise;
         post<T = any>(
             url: string,
             data?: any,
             config?: AxiosRequestConfig
-        ): AjaxResponse<T>;
+        ): AjaxPromise<T>;
         put<T = any>(
             url: string,
             data?: any,
             config?: AxiosRequestConfig
-        ): AjaxResponse<T>;
+        ): AjaxPromise<T>;
         patch<T = any>(
             url: string,
             data?: any,
             config?: AxiosRequestConfig
-        ): AjaxResponse<T>;
+        ): AjaxPromise<T>;
     }
 
     export const ajax: AjaxInstance;
