@@ -3,7 +3,6 @@ import {
     AxiosResponse,
     AxiosRequestConfig,
     AxiosInterceptorManager,
-    AxiosInterceptorManager
 } from "axios";
 
 declare module "@ofm/ajax" {
